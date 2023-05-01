@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div id="registrationInfoDiv">
+        <p>
+            <spam id="namespan"></spam> &nbsp;&nbsp;<span id="usernameSpan"></span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="one">
+            <img src="./images/1basketball.jpg" alt="image 1" id="image1">    
+        </div>  
+        <div class="two">
+            <img src="./images/2cricketball.jpg" alt="image 2" id="image2">
+        </div>
+        <div class="three">
+            <img src="./images/3tabletennis.jpg" alt="image 3" id="image3">
+        </div>
+        <div class="four">
+            <img src="./images/4fifasoccertrophy.jpg" alt="image 4" id="image4">            
+        </div>
+        <div class="diceImage">
+            <img src="./images/buysell.jpg" alt="dice image" id="diceImage">            
+        </div>
+        <div id="CouponGenerator">
+            <p><button type="button" id="generateCoupon" onclick="GenerateCoupon()">Generate Coupon</button></p>
+            <p><span id="coupon"></span> </p>
+        </div>
+    </div> 
+    <div id="diceRollResultDiv"> 
+    </div>
+    <div id="formDiv">        
+        <form action="">
+            <p>
+                <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name" id="name" placeholder="Enter your name"><br> 
+            </p>
+            <p>
+                <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="email" id="email" placeholder="Enter your email"> <br> 
+            </p>
+            <p>
+                <label for="username">User name:</label>&nbsp;
+                <input type="text" name="username" id="username" placeholder="Enter your username"><br>     
+            </p>
+            <p>
+                <button type="button" id="register" onclick="SaveRegistration()">Register</button>     
+            </p>
+        </form>
+    </div> 
+    
+    <script src="./index.js"></script>
+</body>
+</html>

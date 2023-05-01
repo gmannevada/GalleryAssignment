@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box; 
+  }
+
+.container
+{
+  display: flex; 
+  flex-wrap: wrap; 
+  /* for horizontal aligning of child divs*/
+  /* justify-content: center;  */
+
+  /* for vertical aligning */
+  align-items: center; 
+}
+
+
+.container > div
+{
+  width:100px;
+  padding: .5em; 
+  margin: .1em;
+  border: 1px solid black; 
+  color: wheat;
+}
+
+.one{
+    background-color: red;
+}
+.two{
+    background-color: yellowgreen;
+}
+
+.three{
+    background-color: rgb(138, 50, 205);
+}
+
+.four{
+    background-color: rgb(205, 205, 50);
+}
+
+#formDiv{
+    display: none;
+}
+
+#registrationInfoDiv{
+    display: none;
+}
+
+#CouponGenerator
+{
+    display: none;
+}
+
+.diceImage{
+    display: none;
+}
